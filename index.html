@@ -1,4 +1,4 @@
-html_code = """<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -8,7 +8,7 @@ html_code = """<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "h
   <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no" />
   <meta name="color-scheme" content="light dark" />
   <meta name="supported-color-schemes" content="light dark" />
-  <title>ALEYA | Winter, Reimagined — Our Story</title>
+  <title>ALEYA | Our Story &mdash; Winter, Reimagined</title>
   <!--[if gte mso 9]>
   <xml>
     <o:OfficeDocumentSettings>
@@ -31,7 +31,7 @@ html_code = """<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "h
     }
   </style>
   <![endif]-->
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" type="text/css" />
   <style type="text/css">
     /* Reset & Client Normalization */
     html, body {
@@ -39,7 +39,7 @@ html_code = """<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "h
       padding: 0 !important;
       height: 100% !important;
       width: 100% !important;
-      background-color: #EAE5DC !important;
+      background-color: #EFECE6 !important;
       -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
     }
@@ -115,7 +115,7 @@ html_code = """<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "h
       font-family: 'Open Sauce', 'Open Sauce One', 'Open Sauce Sans', 'Montserrat', 'Helvetica Neue', Arial, Helvetica, sans-serif !important;
     }
 
-    /* Dark Mode Protection & Adaptive Colors */
+    /* Dark Mode Protection & Adaptive Styling */
     @media (prefers-color-scheme: dark) {
       .logo-header-cell {
         background-color: #FFFFFF !important;
@@ -124,30 +124,37 @@ html_code = """<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "h
       .logo-sub-lock {
         color: #7C7267 !important;
       }
-      .split-copy-cell {
-        background-color: #1D1916 !important;
-      }
-      .dark-title {
-        color: #F8F6F2 !important;
-      }
-      .dark-body {
-        color: #DDD5CA !important;
-      }
-      .dark-muted {
-        color: #B5AA9C !important;
-      }
-      .pillar-section {
-        background-color: #151210 !important;
-      }
-      .founder-stage {
+      .adaptive-white-section {
         background-color: #181512 !important;
       }
-      .founder-card {
-        background-color: #231E1A !important;
-        border-color: #463D34 !important;
+      .adaptive-cream-section {
+        background-color: #211C18 !important;
       }
-      .closing-stage {
-        background-color: #1D1916 !important;
+      .adaptive-card {
+        background-color: #181512 !important;
+        border-color: #463C33 !important;
+      }
+      .adaptive-title {
+        color: #F8F6F2 !important;
+      }
+      .adaptive-body {
+        color: #E2DAD0 !important;
+      }
+      .adaptive-muted {
+        color: #B4A99B !important;
+      }
+      .adaptive-btn {
+        background-color: #181512 !important;
+        color: #F8F6F2 !important;
+        border-color: #F8F6F2 !important;
+      }
+      .adaptive-dark-cta {
+        background-color: #F8F6F2 !important;
+        color: #181512 !important;
+        border: 1px solid #F8F6F2 !important;
+      }
+      .footer-divider-line {
+        border-top-color: #36302A !important;
       }
     }
 
@@ -157,19 +164,16 @@ html_code = """<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "h
       background-image: linear-gradient(#FFFFFF, #FFFFFF) !important;
     }
 
-    /* Split Editorial Image */
-    .split-editorial-img {
-      width: 290px !important;
-      max-width: 290px !important;
-      height: auto !important;
-      display: block !important;
-    }
-
     /* Responsive Media Queries */
     @media only screen and (max-width: 620px) {
       .email-container {
         width: 100% !important;
         max-width: 100% !important;
+      }
+      .fluid-img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
       }
       .stack-col {
         display: block !important;
@@ -178,50 +182,45 @@ html_code = """<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "h
         direction: ltr !important;
         box-sizing: border-box !important;
       }
-      .split-editorial-img {
-        width: 100% !important;
-        max-width: 100% !important;
-        height: auto !important;
-      }
-      .split-copy-cell {
-        padding: 36px 24px 38px 24px !important;
-      }
       .mobile-pad {
-        padding-left: 20px !important;
-        padding-right: 20px !important;
+        padding-left: 22px !important;
+        padding-right: 22px !important;
       }
-      .about-display-title {
-        font-size: 38px !important;
-        line-height: 44px !important;
+      .split-text-cell {
+        padding: 36px 24px !important;
       }
-      .founder-title {
+      .about-hero-heading {
+        font-size: 32px !important;
+        line-height: 39px !important;
+      }
+      .founder-heading {
         font-size: 28px !important;
-        line-height: 34px !important;
+        line-height: 35px !important;
       }
       .pillar-cell {
         display: block !important;
         width: 100% !important;
         border-right: 0 !important;
         border-bottom: 1px solid #DFD8CE !important;
-        padding: 20px 14px !important;
+        padding: 18px 12px !important;
       }
       .pillar-cell-last {
         display: block !important;
         width: 100% !important;
-        padding: 20px 14px !important;
+        padding: 18px 12px !important;
       }
     }
   </style>
 </head>
-<body id="body" width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #EAE5DC;">
+<body id="body" width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #EFECE6;">
 
   <!-- Preheader Text -->
   <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: Arial, sans-serif;">
-    Winter, reimagined. Discover the story behind ALEYA—founded in Adelaide, Australia, inspired by European winter elegance.
+    Winter, reimagined. Discover the story behind ALEYA &mdash; founded in Adelaide, Australia and inspired by European winter elegance.
   </div>
 
   <!-- Outer Wrapper Table -->
-  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#EAE5DC" style="background-color: #EAE5DC; width: 100%;">
+  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#EFECE6" style="background-color: #EFECE6; width: 100%;">
     <tr>
       <td align="center" valign="top" style="padding: 24px 10px;">
 
@@ -232,61 +231,54 @@ html_code = """<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "h
         <![endif]-->
 
         <!-- Main 600px Email Container -->
-        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#FFFFFF" class="email-container" style="max-width: 600px; width: 100%; background-color: #FFFFFF; border: 1px solid #DFD8CE;">
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#F8F6F2" class="email-container" style="max-width: 600px; width: 100%; background-color: #F8F6F2; border: 1px solid #E2DCD3;">
 
-          <!-- Top Announcement Bar (Matches Website Top Bar: "Winter, reimagined.") -->
+          <!-- Top Brand Tagline Bar -->
           <tr>
-            <td align="center" bgcolor="#181512" style="background-color: #181512; padding: 11px 20px;">
-              <p mc:edit="top_bar_text" class="serif" style="margin: 0; font-family: 'Monterchi Serif', 'Cormorant Garamond', Georgia, 'Times New Roman', serif; font-size: 14px; line-height: 18px; font-style: italic; letter-spacing: 1px; color: #EAE4DC; mso-line-height-rule: exactly;">
-                Winter, reimagined.
+            <td align="center" bgcolor="#181512" style="background-color: #181512; padding: 12px 20px;">
+              <p mc:edit="top_bar_text" class="gothic" style="margin: 0; font-family: 'Sackers Gothic', 'Montserrat', 'Optima', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-size: 10px; line-height: 14px; font-weight: 500; letter-spacing: 3.5px; text-transform: uppercase; color: #EAE4DC; mso-line-height-rule: exactly;">
+                WINTER, REIMAGINED &nbsp;&bull;&nbsp; THE ALEYA STORY
               </p>
             </td>
           </tr>
 
           <!-- Official Brand Logo Header (Locked Pure White #FFFFFF Background) -->
           <tr>
-            <td align="center" bgcolor="#FFFFFF" class="logo-header-cell" style="background-color: #FFFFFF; background-image: linear-gradient(#FFFFFF, #FFFFFF); padding: 28px 20px 24px 20px; border-bottom: 1px solid #E5DFD6;">
-              <a href="https://aleya.com.au/" target="_blank" style="text-decoration: none;">
-                <img mc:edit="brand_logo" src="https://brand-assets.mailchimp.com/01KTG6WNS9Q353PB35KCW7EDCH.png" alt="ALEYA" width="160" border="0" style="width: 160px; max-width: 160px; height: auto; display: block; margin: 0 auto; border: 0;" />
+            <td align="center" bgcolor="#FFFFFF" class="logo-header-cell" style="background-color: #FFFFFF; background-image: linear-gradient(#FFFFFF, #FFFFFF); padding: 30px 20px 24px 20px; border-bottom: 1px solid #E5DFD6;">
+              <a href="https://aleya.com.au/pages/about-us" target="_blank" style="text-decoration: none;">
+                <img mc:edit="brand_logo" src="https://brand-assets.mailchimp.com/01KTG6WNS9Q353PB35KCW7EDCH.png" alt="ALEYA" width="165" border="0" style="width: 165px; max-width: 165px; height: auto; display: block; margin: 0 auto; border: 0;" />
               </a>
-              <p mc:edit="logo_subtext" class="gothic logo-sub-lock" style="margin: 8px 0 0 0; font-family: 'Sackers Gothic', 'Montserrat', 'Optima', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-size: 9px; line-height: 13px; font-weight: 400; letter-spacing: 3.5px; text-transform: uppercase; color: #7C7267; mso-line-height-rule: exactly;">
-                ADELAIDE &nbsp;&bull;&nbsp; AUSTRALIA
+              <p mc:edit="logo_subtext" class="gothic logo-sub-lock" style="margin: 10px 0 0 0; font-family: 'Sackers Gothic', 'Montserrat', 'Optima', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-size: 9px; line-height: 13px; font-weight: 400; letter-spacing: 3.5px; text-transform: uppercase; color: #7C7267; mso-line-height-rule: exactly;">
+                DESIGNED IN AUSTRALIA
               </p>
             </td>
           </tr>
 
-          <!-- SECTION 1: 2-COLUMN SPLIT EDITORIAL SPREAD (Mirrors aleya.com.au/pages/about-us Desktop Layout) -->
+          <!-- SECTION 1: SPLIT EDITORIAL HERO -->
           <tr>
-            <td align="center" bgcolor="#FFFFFF" style="background-color: #FFFFFF; padding: 0;">
+            <td align="center" bgcolor="#F8F6F2" class="adaptive-cream-section" style="background-color: #F8F6F2; border-bottom: 1px solid #E5DFD6;">
               <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 100%;">
                 <tr>
-                  <!-- Left Column: ABOUT US Typography & Brand Philosophy -->
-                  <td width="310" valign="middle" align="center" bgcolor="#FFFFFF" class="stack-col split-copy-cell" style="width: 310px; background-color: #FFFFFF; padding: 36px 26px 36px 28px;">
-                    <h1 mc:edit="about_us_heading" class="serif about-display-title dark-title" style="margin: 0 0 22px 0; font-family: 'Monterchi Serif', 'Cormorant Garamond', 'Didot', 'Bodoni MT', Georgia, 'Times New Roman', serif; font-size: 42px; line-height: 46px; font-weight: 400; letter-spacing: 2px; text-transform: uppercase; color: #181512; mso-line-height-rule: exactly;">
+                  <!-- Left Column: ABOUT US Editorial Intro -->
+                  <td width="50%" valign="middle" align="left" class="stack-col split-text-cell" style="width: 50%; padding: 38px 28px 38px 34px;">
+                    <p mc:edit="about_eyebrow" class="gothic adaptive-muted" style="margin: 0 0 12px 0; font-family: 'Sackers Gothic', 'Montserrat', Arial, Helvetica, sans-serif; font-size: 9px; line-height: 14px; font-weight: 500; letter-spacing: 3.5px; text-transform: uppercase; color: #7C7267; mso-line-height-rule: exactly;">
                       ABOUT US
+                    </p>
+                    <h1 mc:edit="about_heading" class="serif about-hero-heading adaptive-title" style="margin: 0 0 16px 0; font-family: 'Monterchi Serif', 'Cormorant Garamond', 'Didot', Georgia, 'Times New Roman', serif; font-size: 34px; line-height: 40px; font-weight: 500; color: #181512; mso-line-height-rule: exactly;">
+                      Winter, Reimagined.
                     </h1>
-
-                    <p mc:edit="about_lead" class="serif dark-title" style="margin: 0 0 16px 0; font-family: 'Monterchi Serif', 'Cormorant Garamond', Georgia, 'Times New Roman', serif; font-size: 16px; line-height: 23px; font-style: italic; font-weight: 500; color: #181512; mso-line-height-rule: exactly;">
+                    <p mc:edit="about_lead" class="serif adaptive-title" style="margin: 0 0 16px 0; font-family: 'Monterchi Serif', 'Cormorant Garamond', Georgia, 'Times New Roman', serif; font-size: 17px; line-height: 25px; font-style: italic; color: #181512; mso-line-height-rule: exactly;">
                       Aleya &mdash; a name inspired by elevation, elegance, and timeless presence.
                     </p>
-
-                    <p mc:edit="about_p1" class="sans dark-body" style="margin: 0 0 14px 0; font-family: 'Open Sauce', 'Montserrat', Arial, Helvetica, sans-serif; font-size: 12.5px; line-height: 21px; font-weight: 400; color: #4A433C; mso-line-height-rule: exactly;">
+                    <p mc:edit="about_intro_body" class="sans adaptive-body" style="margin: 0; font-family: 'Open Sauce', 'Montserrat', Arial, Helvetica, sans-serif; font-size: 13px; line-height: 22px; font-weight: 400; color: #4A433C; mso-line-height-rule: exactly;">
                       Founded in Adelaide, Australia, Aleya draws inspiration from the enduring sophistication of European winter fashion, reimagined through a modern lens of luxury, warmth, and effortless style.
-                    </p>
-
-                    <p mc:edit="about_p2" class="sans dark-body" style="margin: 0 0 14px 0; font-family: 'Open Sauce', 'Montserrat', Arial, Helvetica, sans-serif; font-size: 12.5px; line-height: 21px; font-weight: 400; color: #4A433C; mso-line-height-rule: exactly;">
-                      Each piece is thoughtfully designed to evoke a sense of confidence, presence, and refinement. From luxurious furs and soft luxury lining to considered functionality and timeless silhouettes, every coat is crafted to balance comfort, sophistication, and enduring elegance.
-                    </p>
-
-                    <p mc:edit="about_p3" class="sans dark-body" style="margin: 0; font-family: 'Open Sauce', 'Montserrat', Arial, Helvetica, sans-serif; font-size: 12.5px; line-height: 21px; font-weight: 400; color: #4A433C; mso-line-height-rule: exactly;">
-                      Produced in limited quantities, Aleya collections are intentionally exclusive, creating pieces that feel distinctive, considered, and timeless.
                     </p>
                   </td>
 
-                  <!-- Right Column: New About Us Duo Lounge Photo (f61ba09f...) -->
-                  <td width="290" valign="top" align="center" class="stack-col" style="width: 290px; padding: 0; line-height: 0; font-size: 0;">
+                  <!-- Right Column: About Us Hero Image -->
+                  <td width="50%" valign="middle" align="center" class="stack-col" style="width: 50%; line-height: 0; font-size: 0;">
                     <a href="https://aleya.com.au/pages/about-us" target="_blank" style="text-decoration: none;">
-                      <img mc:edit="about_split_image" src="https://mcusercontent.com/490876211b0db51427f3fdaa1/images/f61ba09f-d421-7962-ca8f-0dbd6a1ce19e.png" alt="ALEYA — Winter, Reimagined" width="290" border="0" class="split-editorial-img" style="width: 290px; max-width: 290px; height: auto; display: block; border: 0;" />
+                      <img mc:edit="about_hero_img" src="https://mcusercontent.com/490876211b0db51427f3fdaa1/images/f61ba09f-d421-7962-ca8f-0dbd6a1ce19e.png" alt="ALEYA About Us Editorial" width="300" border="0" class="fluid-img" style="width: 100%; max-width: 300px; height: auto; display: block; border: 0;" />
                     </a>
                   </td>
                 </tr>
@@ -294,89 +286,113 @@ html_code = """<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "h
             </td>
           </tr>
 
-          <!-- SECTION 2: SIGNATURE BRAND STATEMENT BAND -->
+          <!-- SECTION 2: THE BRAND ETHOS & 3 PILLARS -->
           <tr>
-            <td align="center" bgcolor="#181512" class="mobile-pad" style="background-color: #181512; padding: 34px 44px;">
-              <p mc:edit="brand_quote_band" class="serif" style="margin: 0; font-family: 'Monterchi Serif', 'Cormorant Garamond', 'Didot', Georgia, 'Times New Roman', serif; font-size: 21px; line-height: 30px; font-style: italic; font-weight: 400; color: #F8F6F2; max-width: 480px; mso-line-height-rule: exactly;">
-                &ldquo;Aleya exists for those who appreciate timeless elegance, exceptional comfort, and effortless sophistication.&rdquo;
+            <td align="center" bgcolor="#FFFFFF" class="mobile-pad adaptive-white-section" style="background-color: #FFFFFF; padding: 46px 42px 44px 42px;">
+              <p mc:edit="ethos_eyebrow" class="gothic adaptive-muted" style="margin: 0 0 12px 0; font-family: 'Sackers Gothic', 'Montserrat', Arial, Helvetica, sans-serif; font-size: 10px; line-height: 14px; font-weight: 500; letter-spacing: 3.5px; text-transform: uppercase; color: #7C7267; mso-line-height-rule: exactly;">
+                CRAFTED WITH INTENTION
               </p>
-            </td>
-          </tr>
 
-          <!-- SECTION 3: 3-PILLAR CRAFTSMANSHIP STRIP -->
-          <tr>
-            <td align="center" bgcolor="#F8F6F2" class="pillar-section" style="background-color: #F8F6F2; padding: 28px 24px; border-bottom: 1px solid #E5DFD6;">
-              <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 100%;">
+              <p mc:edit="ethos_body_1" class="sans adaptive-body" style="margin: 0 0 18px 0; font-family: 'Open Sauce', 'Montserrat', Arial, Helvetica, sans-serif; font-size: 15px; line-height: 25px; font-weight: 400; color: #4A433C; max-width: 470px; mso-line-height-rule: exactly;">
+                Each piece is thoughtfully designed to evoke a sense of confidence, presence, and refinement. From luxurious furs and soft luxury lining to considered functionality and timeless silhouettes, every coat is crafted to balance comfort, sophistication, and enduring elegance.
+              </p>
+
+              <p mc:edit="ethos_body_2" class="serif adaptive-title" style="margin: 0 0 32px 0; font-family: 'Monterchi Serif', 'Cormorant Garamond', Georgia, 'Times New Roman', serif; font-size: 20px; line-height: 28px; font-style: italic; color: #181512; max-width: 450px; mso-line-height-rule: exactly;">
+                &ldquo;Produced in limited quantities, Aleya collections are intentionally exclusive, creating pieces that feel distinctive, considered, and timeless.&rdquo;
+              </p>
+
+              <!-- 3 Brand Pillars Strip -->
+              <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 100%; border-top: 1px solid #DFD8CE; border-bottom: 1px solid #DFD8CE;">
                 <tr>
-                  <td width="33.33%" align="center" valign="top" class="pillar-cell" style="width: 33.33%; padding: 8px 12px; border-right: 1px solid #DFD8CE;">
-                    <p mc:edit="pillar_1_tag" class="gothic dark-muted" style="margin: 0 0 6px 0; font-family: 'Sackers Gothic', 'Montserrat', Arial, Helvetica, sans-serif; font-size: 9px; line-height: 13px; font-weight: 500; letter-spacing: 2.5px; text-transform: uppercase; color: #7C7267;">01 &bull; HERITAGE</p>
-                    <p mc:edit="pillar_1_title" class="serif dark-title" style="margin: 0; font-family: 'Monterchi Serif', 'Cormorant Garamond', Georgia, serif; font-size: 17px; line-height: 22px; font-weight: 600; color: #181512;">European Inspiration</p>
+                  <td width="33.33%" align="center" valign="top" class="pillar-cell" style="width: 33.33%; padding: 18px 8px; border-right: 1px solid #DFD8CE;">
+                    <p mc:edit="pillar_1_title" class="gothic adaptive-title" style="margin: 0 0 4px 0; font-family: 'Sackers Gothic', 'Montserrat', Arial, Helvetica, sans-serif; font-size: 9px; line-height: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #181512;">ADELAIDE, AU</p>
+                    <p mc:edit="pillar_1_sub" class="sans adaptive-muted" style="margin: 0; font-family: 'Open Sauce', 'Montserrat', Arial, Helvetica, sans-serif; font-size: 11px; line-height: 16px; color: #7C7267;">Thoughtfully Designed</p>
                   </td>
-                  <td width="33.33%" align="center" valign="top" class="pillar-cell" style="width: 33.33%; padding: 8px 12px; border-right: 1px solid #DFD8CE;">
-                    <p mc:edit="pillar_2_tag" class="gothic dark-muted" style="margin: 0 0 6px 0; font-family: 'Sackers Gothic', 'Montserrat', Arial, Helvetica, sans-serif; font-size: 9px; line-height: 13px; font-weight: 500; letter-spacing: 2.5px; text-transform: uppercase; color: #7C7267;">02 &bull; DESIGN</p>
-                    <p mc:edit="pillar_2_title" class="serif dark-title" style="margin: 0; font-family: 'Monterchi Serif', 'Cormorant Garamond', Georgia, serif; font-size: 17px; line-height: 22px; font-weight: 600; color: #181512;">Founded in Adelaide</p>
+                  <td width="33.33%" align="center" valign="top" class="pillar-cell" style="width: 33.33%; padding: 18px 8px; border-right: 1px solid #DFD8CE;">
+                    <p mc:edit="pillar_2_title" class="gothic adaptive-title" style="margin: 0 0 4px 0; font-family: 'Sackers Gothic', 'Montserrat', Arial, Helvetica, sans-serif; font-size: 9px; line-height: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #181512;">EUROPEAN MUSE</p>
+                    <p mc:edit="pillar_2_sub" class="sans adaptive-muted" style="margin: 0; font-family: 'Open Sauce', 'Montserrat', Arial, Helvetica, sans-serif; font-size: 11px; line-height: 16px; color: #7C7267;">Timeless Silhouettes</p>
                   </td>
-                  <td width="33.33%" align="center" valign="top" class="pillar-cell-last" style="width: 33.33%; padding: 8px 12px;">
-                    <p mc:edit="pillar_3_tag" class="gothic dark-muted" style="margin: 0 0 6px 0; font-family: 'Sackers Gothic', 'Montserrat', Arial, Helvetica, sans-serif; font-size: 9px; line-height: 13px; font-weight: 500; letter-spacing: 2.5px; text-transform: uppercase; color: #7C7267;">03 &bull; EXCLUSIVITY</p>
-                    <p mc:edit="pillar_3_title" class="serif dark-title" style="margin: 0; font-family: 'Monterchi Serif', 'Cormorant Garamond', Georgia, serif; font-size: 17px; line-height: 22px; font-weight: 600; color: #181512;">Limited Quantities</p>
+                  <td width="33.33%" align="center" valign="top" class="pillar-cell-last" style="width: 33.33%; padding: 18px 8px;">
+                    <p mc:edit="pillar_3_title" class="gothic adaptive-title" style="margin: 0 0 4px 0; font-family: 'Sackers Gothic', 'Montserrat', Arial, Helvetica, sans-serif; font-size: 9px; line-height: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #181512;">LIMITED STOCK</p>
+                    <p mc:edit="pillar_3_sub" class="sans adaptive-muted" style="margin: 0; font-family: 'Open Sauce', 'Montserrat', Arial, Helvetica, sans-serif; font-size: 11px; line-height: 16px; color: #7C7267;">Intentionally Exclusive</p>
                   </td>
                 </tr>
               </table>
             </td>
           </tr>
 
-          <!-- SECTION 4: THE FOUNDER STORY FLOATING EDITORIAL CARD (Mirrors Bottom Section of About Us Page) -->
+          <!-- SECTION 3: THE FOUNDER STORY (Editorial Letter Box) -->
           <tr>
-            <td align="center" bgcolor="#26221E" class="mobile-pad founder-stage" style="background-color: #26221E; padding: 48px 38px;">
-              <!-- White Floating Editorial Card -->
-              <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#FFFFFF" class="founder-card" style="width: 100%; background-color: #FFFFFF; border: 1px solid #D8CFC2; box-shadow: 0 12px 30px rgba(0,0,0,0.18);">
+            <td align="center" bgcolor="#F2EEE7" class="mobile-pad adaptive-cream-section" style="background-color: #F2EEE7; padding: 46px 36px; border-top: 1px solid #E5DFD6; border-bottom: 1px solid #E5DFD6;">
+              <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#FFFFFF" class="adaptive-card" style="width: 100%; background-color: #FFFFFF; border: 1px solid #DFD8CE;">
                 <tr>
-                  <td align="left" style="padding: 40px 38px 38px 38px;">
-                    <p mc:edit="founder_eyebrow" class="gothic dark-muted" style="margin: 0 0 10px 0; font-family: 'Sackers Gothic', 'Montserrat', Arial, Helvetica, sans-serif; font-size: 9px; line-height: 13px; font-weight: 500; letter-spacing: 3.5px; text-transform: uppercase; color: #8C7E6A;">
-                      BEHIND THE BRAND
+                  <td align="left" style="padding: 38px 34px;">
+                    <p mc:edit="founder_eyebrow" class="gothic adaptive-muted" style="margin: 0 0 10px 0; font-family: 'Sackers Gothic', 'Montserrat', Arial, Helvetica, sans-serif; font-size: 9px; line-height: 14px; font-weight: 500; letter-spacing: 3.5px; text-transform: uppercase; color: #7C7267; mso-line-height-rule: exactly;">
+                      A NOTE FROM OUR FOUNDER
                     </p>
-
-                    <h2 mc:edit="founder_heading" class="serif founder-title dark-title" style="margin: 0 0 20px 0; font-family: 'Monterchi Serif', 'Cormorant Garamond', 'Didot', Georgia, 'Times New Roman', serif; font-size: 32px; line-height: 38px; font-weight: 500; color: #181512; mso-line-height-rule: exactly;">
+                    <h2 mc:edit="founder_title" class="serif founder-heading adaptive-title" style="margin: 0 0 20px 0; font-family: 'Monterchi Serif', 'Cormorant Garamond', 'Didot', Georgia, 'Times New Roman', serif; font-size: 32px; line-height: 38px; font-weight: 500; color: #181512; mso-line-height-rule: exactly;">
                       The Founder Story
                     </h2>
 
-                    <p mc:edit="founder_p1" class="sans dark-body" style="margin: 0 0 16px 0; font-family: 'Open Sauce', 'Montserrat', Arial, Helvetica, sans-serif; font-size: 14px; line-height: 24px; font-weight: 400; color: #4A433C; mso-line-height-rule: exactly;">
+                    <p mc:edit="founder_p1" class="sans adaptive-body" style="margin: 0 0 16px 0; font-family: 'Open Sauce', 'Montserrat', Arial, Helvetica, sans-serif; font-size: 15px; line-height: 25px; font-weight: 400; color: #4A433C; mso-line-height-rule: exactly;">
                       Growing up in Europe, fur coats were a symbol of elegance and confidence. After moving to Australia eight years ago, I found myself struggling to find a fur coat that felt truly luxurious, warm, and timeless.
                     </p>
 
-                    <p mc:edit="founder_p2" class="sans dark-body" style="margin: 0 0 20px 0; font-family: 'Open Sauce', 'Montserrat', Arial, Helvetica, sans-serif; font-size: 14px; line-height: 24px; font-weight: 400; color: #4A433C; mso-line-height-rule: exactly;">
+                    <p mc:edit="founder_p2" class="sans adaptive-body" style="margin: 0 0 20px 0; font-family: 'Open Sauce', 'Montserrat', Arial, Helvetica, sans-serif; font-size: 15px; line-height: 25px; font-weight: 400; color: #4A433C; mso-line-height-rule: exactly;">
                       I began designing my own pieces through carefully selected manufacturers, creating coats I genuinely wanted to wear across every occasion. The coats quickly drew attention wherever they were worn, with women constantly asking where they were from.
                     </p>
 
-                    <p mc:edit="founder_closing" class="serif dark-title" style="margin: 0; font-family: 'Monterchi Serif', 'Cormorant Garamond', 'Didot', Georgia, 'Times New Roman', serif; font-size: 22px; line-height: 28px; font-style: italic; font-weight: 500; color: #181512; mso-line-height-rule: exactly;">
+                    <p mc:edit="founder_closing_quote" class="serif adaptive-title" style="margin: 0 0 26px 0; font-family: 'Monterchi Serif', 'Cormorant Garamond', Georgia, 'Times New Roman', serif; font-size: 22px; line-height: 28px; font-style: italic; font-weight: 500; color: #181512; mso-line-height-rule: exactly;">
                       That moment became Aleya.
                     </p>
+
+                    <!-- Bulletproof VML Ghost Button -->
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="left">
+                      <tr>
+                        <td align="center">
+                          <!--[if mso]>
+                          <v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://aleya.com.au/pages/about-us" style="height:46px;v-text-anchor:middle;width:240px;" strokecolor="#181512" strokeweight="1pt" fillcolor="#FFFFFF">
+                            <w:anchorlock/>
+                            <center style="color:#181512;font-family:Arial,Helvetica,sans-serif;font-size:10px;font-weight:bold;letter-spacing:3px;text-transform:uppercase;">READ OUR FULL STORY</center>
+                          </v:rect>
+                          <![endif]-->
+                          <!--[if !mso]><!-->
+                          <a mc:edit="founder_cta_btn" href="https://aleya.com.au/pages/about-us" target="_blank" class="gothic adaptive-btn" style="display: inline-block; padding: 14px 30px; font-family: 'Sackers Gothic', 'Montserrat', Arial, Helvetica, sans-serif; font-size: 10px; line-height: 15px; font-weight: 500; letter-spacing: 3px; text-transform: uppercase; color: #181512; background-color: #FFFFFF; border: 1px solid #181512; text-decoration: none;">
+                            READ OUR FULL STORY
+                          </a>
+                          <!--<![endif]-->
+                        </td>
+                      </tr>
+                    </table>
                   </td>
                 </tr>
               </table>
             </td>
           </tr>
 
-          <!-- SECTION 5: CLOSING CALL TO ACTION -->
+          <!-- SECTION 4: CLOSING BRAND STATEMENT & CTA (With Horizontal Divider Below) -->
           <tr>
-            <td align="center" bgcolor="#F2EEE7" class="mobile-pad closing-stage" style="background-color: #F2EEE7; padding: 46px 44px; border-top: 1px solid #E5DFD6;">
-              <p mc:edit="closing_reminder_text" class="serif dark-title" style="margin: 0 0 26px 0; font-family: 'Monterchi Serif', 'Cormorant Garamond', Georgia, 'Times New Roman', serif; font-size: 23px; line-height: 31px; font-weight: 400; color: #181512; max-width: 440px; mso-line-height-rule: exactly;">
-                Aleya is a luxury fur coat brand designed to make you feel unforgettable. Every piece in our collection comes in a limited stock.
+            <td align="center" bgcolor="#FFFFFF" class="mobile-pad adaptive-white-section" style="background-color: #FFFFFF; padding: 46px 44px 30px 44px;">
+              <p mc:edit="closing_eyebrow" class="gothic adaptive-muted" style="margin: 0 0 10px 0; font-family: 'Sackers Gothic', 'Montserrat', Arial, Helvetica, sans-serif; font-size: 9px; line-height: 14px; font-weight: 500; letter-spacing: 3.5px; text-transform: uppercase; color: #7C7267;">
+                TIMELESS ELEGANCE &bull; EXCEPTIONAL COMFORT
+              </p>
+              <p mc:edit="closing_reminder_text" class="serif adaptive-title" style="margin: 0 0 26px 0; font-family: 'Monterchi Serif', 'Cormorant Garamond', Georgia, 'Times New Roman', serif; font-size: 24px; line-height: 32px; font-weight: 400; color: #181512; max-width: 450px; mso-line-height-rule: exactly;">
+                Aleya is a luxury fur coat brand designed to make you feel unforgettable. Every piece in our collection comes in limited stock.
               </p>
 
-              <!-- Bulletproof VML Solid Dark Button -->
+              <!-- Bulletproof VML Solid Dark Button (Dark-Mode Safe) -->
               <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center">
                 <tr>
                   <td align="center">
                     <!--[if mso]>
-                    <v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://aleya.com.au/collections/all" style="height:48px;v-text-anchor:middle;width:280px;" stroke="f" fillcolor="#181512">
+                    <v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://aleya.com.au/collections/all" style="height:48px;v-text-anchor:middle;width:270px;" stroke="f" fillcolor="#181512">
                       <w:anchorlock/>
-                      <center style="color:#F8F6F2;font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:bold;letter-spacing:3px;text-transform:uppercase;">DISCOVER THE COLLECTION</center>
+                      <center style="color:#F8F6F2;font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:bold;letter-spacing:3px;text-transform:uppercase;">EXPLORE THE COLLECTION</center>
                     </v:rect>
                     <![endif]-->
                     <!--[if !mso]><!-->
-                    <a mc:edit="closing_cta_btn" href="https://aleya.com.au/collections/all" target="_blank" class="gothic" style="display: inline-block; padding: 15px 38px; font-family: 'Sackers Gothic', 'Montserrat', Arial, Helvetica, sans-serif; font-size: 11px; line-height: 16px; font-weight: 500; letter-spacing: 3px; text-transform: uppercase; color: #F8F6F2; background-color: #181512; text-decoration: none;">
-                      DISCOVER THE COLLECTION
+                    <a mc:edit="closing_cta_btn" href="https://aleya.com.au/collections/all" target="_blank" class="gothic adaptive-dark-cta" style="display: inline-block; padding: 15px 36px; font-family: 'Sackers Gothic', 'Montserrat', Arial, Helvetica, sans-serif; font-size: 11px; line-height: 16px; font-weight: 500; letter-spacing: 3px; text-transform: uppercase; color: #F8F6F2; background-color: #181512; border: 1px solid #181512; text-decoration: none;">
+                      EXPLORE THE COLLECTION
                     </a>
                     <!--<![endif]-->
                   </td>
@@ -385,16 +401,23 @@ html_code = """<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "h
             </td>
           </tr>
 
-          <!-- Luxury Dark Espresso Footer -->
+          <!-- Luxury Dark Espresso Footer (With Clean Horizontal Divider Line Above Tagline) -->
           <tr>
-            <td align="center" bgcolor="#181512" style="background-color: #181512; padding: 44px 30px 36px 30px; color: #F8F6F2;">
+            <td align="center" bgcolor="#181512" style="background-color: #181512; padding: 25px 30px 36px 30px; color: #F8F6F2;">
+              <!-- Horizontal Divider Line -->
+              <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 480px; width: 100%; margin: 0 auto 28px auto;">
+                <tr>
+                  <td class="footer-divider-line" style="border-top: 1px solid #36302A; font-size: 0; line-height: 0;">&nbsp;</td>
+                </tr>
+              </table>
+
               <p mc:edit="footer_tagline" class="gothic" style="margin: 0 0 20px 0; font-family: 'Sackers Gothic', 'Montserrat', Arial, Helvetica, sans-serif; font-size: 9px; line-height: 14px; letter-spacing: 3px; text-transform: uppercase; color: #9E9488; mso-line-height-rule: exactly;">
                 LIMITED LUXURY PIECES &bull; AUSTRALIA
               </p>
               <p mc:edit="footer_nav" class="gothic" style="margin: 0 0 24px 0; font-family: 'Sackers Gothic', 'Montserrat', Arial, Helvetica, sans-serif; font-size: 10px; line-height: 16px; letter-spacing: 2.5px; text-transform: uppercase; color: #EAE4DC;">
                 <a href="https://aleya.com.au/collections/all" target="_blank" style="color: #EAE4DC; text-decoration: none;">SHOP</a>
                 &nbsp;&nbsp;&bull;&nbsp;&nbsp;
-                <a href="https://aleya.com.au/pages/about-us" target="_blank" style="color: #EAE4DC; text-decoration: none;">ABOUT US</a>
+                <a href="https://aleya.com.au/pages/about-us" target="_blank" style="color: #EAE4DC; text-decoration: none;">OUR STORY</a>
                 &nbsp;&nbsp;&bull;&nbsp;&nbsp;
                 <a href="https://aleya.com.au/pages/contact" target="_blank" style="color: #EAE4DC; text-decoration: none;">CONTACT</a>
               </p>
